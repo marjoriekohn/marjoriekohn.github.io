@@ -1,1 +1,13 @@
 /* This file contains styles for reusable UI components such as buttons, forms, and widgets. */
+
+
+/* social media icons/buttons */
+a:hover {
+  border: solid #000 .1rem;
+}
+.fa-shake {
+  animation-play-state: paused;
+}
+.fa-shake:hover {
+  animation-play-state: running;
+}

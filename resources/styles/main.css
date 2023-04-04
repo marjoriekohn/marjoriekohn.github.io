@@ -1,33 +1,19 @@
 /* This file contains the basic styles that are applied to all pages on the website, such as font styles, link styles, and background colors. */
+:root {
+  --darkb: #1A237E;
+  --lightb: #3F51B5;
+  --darkg: #212121;
+  --lightg: #F5F5F5;
+  --white: #FFF;
+}
+
 body {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
+  background-color: var(--lightg);
 }
 h1, h2, h3, h4, h5, h6 {
   font-family: "Oswald", "Poppins", sans-serif;
-}
-/* name and contact info */
-.myname {
-  text-align: center;
-}
-/* styles apply to the entire nav section */
-.jumbotron nav {
-
-}
-/* styles apply to buttons within nav section */
-.jumbotron a {
-
-}
-/* navigation tabs */
-#nav-tab {
-
-}
-/* styles for the tabs within the nav-tab section */
-.nav-item {
-
-}
-/* universal styles for the entire body of all tabs  */
-#nav-tabContent {
-  margin: 40px 40px;
+  color: var(--darkg)
 }
