@@ -16,6 +16,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;700&family=Poppins:wght@100;400&display=swap" rel="stylesheet">
 <!-- font awesome -->
     <link rel="stylesheet" href="./fontawesome/css/fontawesome.min.css">
+    <script src="https://kit.fontawesome.com/8d11417666.js" crossorigin="anonymous"></script>
 <!-- CSS -->
   <link href="./website/style.css" type="text/css" rel="stylesheet">
 </head>
@@ -27,24 +28,19 @@
   <p class="myname">Junior Full-Stack Java Developer | Scrum Master</p>
   <nav class="nav nav-pills flex-column flex-sm-row">
     <a class="flex-sm-fill text-sm-center nav-link btn btn-outline-primary" href="https://www.linkedin.com/in/marymkohn" target="_blank" role="button">
-      <i class="fa fa-linkedin"></i>
-      LinkedIn
+      <i class="fa-brands fa-linkedin fa-shake fa-2xl"></i>
     </a>
     <a class="flex-sm-fill text-sm-center nav-link btn btn-outline-primary" href="https://www.github.com/marymkohn" target="_blank" role="button">
-      <i class="fa fa-github"></i>
-      GitHub
+      <i class="fa-brands fa-github fa-shake fa-2xl"></i>
     </a>
     <a class="flex-sm-fill text-sm-center nav-link btn btn-outline-primary" href="https://www.credly.com/users/mary-kohn" target="_blank" role="button">
-      <i class="fa fa-certificate"></i>
-      Credly
+      <i class="fa-solid fa-certificate fa-shake fa-2xl"></i>
     </a>
     <a class="flex-sm-fill text-sm-center nav-link btn btn-outline-primary" href="https://www.calendly.com/marymkohn" target="_blank" role="button">
-      <i class="fa fa-calendar-alt"></i>
-      Calendly
+      <i class="fa-solid fa-calendar-days fa-shake fa-2xl"></i>
     </a>
     <a class="flex-sm-fill text-sm-center nav-link btn btn-outline-primary" href="mailto:marymkohn@gmail.com" target="_blank" role="button">
-      <i class="fa fa-envelope"></i>
-      Email
+      <i class="fa-brands fa-google fa-shake fa-2xl"></i>
     </a>
   </nav>
 </div>
@@ -83,8 +79,10 @@
         <img class="card-img-top object-fit-md-contain border rounded" src=".../100px180/" alt="Card image cap">
         <div class="card-body">
           <h5 class="card-title">Project Name</h5>
-          <p class="card-text">Project details will go here.</p>
-          <a href="#" class="btn btn-primary">See More</a>
+          <p class="card-text">Project description will go here.</p>
+          <p class="card-text">Project languages will go here.</p>
+          <p class="card-text">Project contributors will go here.</p>
+          <a href="#" class="btn btn-primary">See More</a> <!-- see more leads to project page (code sample, ) -->
         </div>
       </div>
       <div class="card" style="width: 18rem;">
@@ -123,27 +121,18 @@
 <!-- Main Certifications -->
 
 <!-- Codecademy Certifications -->
-
+</div>
 <!-- contact tab/section -->
   <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
-    <form>
-      <h2>Let's Connect!</h2>
-      <div class="form-group">
-        <label for="name">Name</label>
-        <input type="text" class="form-control" id="name">
-      </div>
-      <div class="form-group">
-        <label for="phone">Phone Number</label>
-        <input type="phone" class="form-control" id="phone">
-      </div>
-      <div class="form-group">
-        <label for="message">Message</label>
-        <textarea name="message" class="form-control" id="message"></textarea>
-      </div>
-      <button type="submit" class="btn btn-primary">Submit</button>
-    </form>
+    <!-- Calendly inline widget begin -->
+    <div class="calendly-inline-widget" data-url="https://calendly.com/d/yjz-d7q-6v5?hide_gdpr_banner=1"
+      style="min-width:320px;height:630px;">
+    </div>
+    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+    <!-- Calendly inline widget end -->
   </div>
-</div>
+
+    
 
 <!-- Javascript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
