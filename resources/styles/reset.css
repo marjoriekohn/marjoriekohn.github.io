@@ -1,1 +1,8 @@
 /* This file contains a set of reset styles that are applied to all HTML elements to ensure that they have consistent styles across all browsers. */
+:root {
+  --darkb: #1A237E; /* body background, button hover background */
+  --lightb: #3F51B5; /* header background, button background */
+  --darkg: #212121;  /* footer background */
+  --lightg: #F5F5F5; /* main text */
+  --white: #FFF; /* accent, button text */
+}

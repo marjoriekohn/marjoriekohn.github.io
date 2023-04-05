@@ -29,121 +29,148 @@
 
 <body>
 <!-- contact bar -->
-<section class="jumbotron">
-  <h1 class="myname">Mary Kohn</h1>
-  <p class="myname">Full-Stack Java Developer</p>
-  <nav class="nav nav-pills flex-column flex-sm-row">
-    <a class="flex-sm-fit text-sm-center nav-link btn" href="https://www.linkedin.com/in/marymkohn" target="_blank" role="button">
-      <i class="fa-brands fa-linkedin fa-shake fa-2xl"></i>
-    </a>
-    <a class="flex-sm-fit text-sm-center nav-link btn" href="https://www.github.com/marymkohn" target="_blank" role="button">
-      <i class="fa-brands fa-github fa-shake fa-2xl"></i>
-    </a>
-    <a class="flex-sm-fit text-sm-center nav-link btn" href="https://www.credly.com/users/mary-kohn" target="_blank" role="button">
-      <i class="fa-solid fa-certificate fa-shake fa-2xl"></i>
-    </a>
-    <a class="flex-sm-fit text-sm-center nav-link btn" href="https://www.calendly.com/marymkohn" target="_blank" role="button">
-      <i class="fa-solid fa-calendar-days fa-shake fa-2xl"></i>
-    </a>
-    <a class="flex-sm-fit text-sm-center nav-link btn" href="mailto:marymkohn@gmail.com" target="_blank" role="button">
-      <i class="fa-brands fa-google fa-shake fa-2xl"></i>
-    </a>
-  </nav>
-</section>
+<header class="jumbotron">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-9">
+        <div class="badge-container">
+          <h1>Mary Kohn</h1>
+          <a href="#" target="_blank" role="button"><img src="resources/img/aws.png" alt="Javascript Badge"></a>
+          <a href="#" target="_blank" role="button"><img src="resources/img/aws.png" alt="AWS Practitioner Badge"></a>
+          <a href="#" target="_blank" role="button"><img src="resources/img/safe.png" alt="SAFe Scrum Master Badge"></a>
+          <a href="#" target="_blank" role="button"><img src="resources/img/psm.png"
+              alt="Professional Scrum Master Badge"></a>
+          </div>
+          <div>
+            <h2>Full-Stack Java Developer</h2>
+          </div>
+      </div>
+      <div class="col-md-3">
+        <nav>
+          <a class="nav-link btn" href="https://www.linkedin.com/in/marymkohn" target="_blank" role="button">
+            <i class="fa-brands fa-linkedin fa-shake fa-2x"></i>
+          </a>
+          <a class="nav-link btn" href="https://www.github.com/marymkohn" target="_blank" role="button">
+            <i class="fa-brands fa-github fa-shake fa-2x"></i>
+          </a>
+          <a class="nav-link btn" href="mailto:marymkohn@gmail.com" target="_blank" role="button">
+            <i class="fa-solid fa-envelope fa-shake fa-2x"></i>
+          </a>
+        </nav>
+      </div>
+    </div>
+  </div>
+
+</header>
 
 <!-- navigation tabs  -->
 <section>
   <div class="nav nav-tabs justify-content-center" id="nav-tab" role="tablist">
     <a class="nav-item nav-link active" id="nav-about-tab" data-toggle="tab" data-target="#nav-about" role="tab" aria-controls="nav-about" aria-selected="true">About</a>
+
     <a class="nav-item nav-link" id="nav-project-tab" data-toggle="tab" data-target="#nav-project" role="tab" aria-controls="nav-project" aria-selected="false">Projects</a>
+
     <a class="nav-item nav-link" id="nav-contribution-tab" data-toggle="tab" data-target="#nav-contribution" role="tab" aria-controls="nav-contribution" aria-selected="false">Contributions</a>
-    <a class="nav-item nav-link" id="nav-certification-tab" data-toggle="tab" data-target="#nav-certification" role="tab" aria-controls="nav-certification" aria-selected="false">Certifications</a>
+
     <a class="nav-item nav-link" id="nav-contact-tab" data-toggle="tab" data-target="#nav-contact" role="tab" aria-controls="nav-contact" aria-selected="false">Contact</a>
+
   </div>
 </section>
 
-<!-- about me tab/section -->
-<div class="tab-content g-2" id="nav-tabContent">
-  <div class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
+
+<section class="tab-content g-2" id="nav-tabContent">
+  <!-- about me tab/section -->
+  <main class="tab-pane fade show active" id="nav-about" role="tabpanel" aria-labelledby="nav-about-tab">
     <div id="about">
-      <div class="grid">
-        <div class="box">
-          <p>I bring a unique mix of skills, experience, and a passion for education to the table. I'm eager to put my creativity and problem-solving skills to work in the tech industry. In addition, I have a curious mind and love learning new things, so I'm always up for a challenge!</p>
+        <div>
+          <p>About me</p>
         </div>
-        <div class="box">
-          <p>When I'm not tapping away at my keyboard, you can find me taking my furry best friend for a walk, getting lost in a good book, or catching up with my closest buddies. It's important to me to maintain a healthy work-life balance and recharge my batteries outside of coding.</p>
+        <div>
+          <p>Hard Skills</p>
         </div>
-        <div class="box">
-          <p>In addition to my love for technology, I believe in giving back and making a positive impact. Whether volunteering my time or using my skills for good causes, I always look for ways to make a difference in my community.</p>
+        <div>
+          <p>Soft Skills</p>
         </div>
       </div>
     </div>
-  </div>
+  </main>
 <!-- project tab/section -->
-  <section class="tab-pane fade" id="nav-project" role="tabpanel" aria-labelledby="nav-project-tab">
-    <div class="card-deck">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top object-fit-md-contain border rounded" src=".../100px180/" alt="Card image cap">
+  <article class="tab-pane fade" id="nav-project" role="tabpanel" aria-labelledby="nav-project-tab">
+    <div class="card-deck flex-column flex-sm-row">
+      <div class="card">
+        <img class="card-img-top border rounded" src="#" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Project Name</h5>
+          <h3 class="card-title">Project Name</h3>
           <p class="card-text">Project description will go here.</p>
           <p class="card-text">Project languages will go here.</p>
           <p class="card-text">Project contributors will go here.</p>
-          <a href="#" class="btn btn-primary">See More</a> <!-- see more leads to project page (code sample, ) -->
+          <a href="#" class="btn btn-dark">See More</a> <!-- see more leads to project page (code sample, ) -->
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top object-fit-md-contain border rounded" src=".../100px180/" alt="Card image cap">
+      <div class="card">
+        <img class="card-img-top border rounded" src="#" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Project Name</h5>
+          <h3 class="card-title">Project Name</h3>
           <p class="card-text">Project details will go here.</p>
-          <a href="#" class="btn btn-primary">See More</a>
+          <a href="#" class="btn btn-dark">See More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top border rounded" src="#" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Project Name</h3>
+          <p class="card-text">Project details will go here.</p>
+          <a href="#" class="btn btn-dark">See More</a>
         </div>
       </div>
     </div>
-  </section>
+  </article>
 <!-- contribution tab/section -->
-  <section class="tab-pane fade" id="nav-contribution" role="tabpanel" aria-labelledby="nav-contribution-tab">
-    <div class="card-deck">
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top object-fit-md-contain border rounded" src=".../100px180/" alt="Card image cap">
+  <article class="tab-pane fade" id="nav-contribution" role="tabpanel" aria-labelledby="nav-contribution-tab">
+    <div class="card-deck flex-column flex-sm-row">
+      <div class="card">
+        <img class="card-img-top border rounded" src="#" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Project Name</h5>
+          <h3 class="card-title">Cheese Crave</h3>
           <p class="card-text">Project details will go here.</p>
-          <a href="#" class="btn btn-primary">See More</a>
+          <a href="#" class="btn btn-dark">See More</a>
         </div>
       </div>
-      <div class="card" style="width: 18rem;">
-        <img class="card-img-top object-fit-md-contain border rounded" src=".../100px180/" alt="Card image cap">
+      <div class="card">
+        <img class="card-img-top border rounded" src="#" alt="Card image cap">
         <div class="card-body">
-          <h5 class="card-title">Project Name</h5>
+          <h3 class="card-title">Project Name</h3>
           <p class="card-text">Project details will go here.</p>
-          <a href="#" class="btn btn-primary">See More</a>
+          <a href="#" class="btn btn-dark">See More</a>
+        </div>
+      </div>
+      <div class="card">
+        <img class="card-img-top border rounded" src="#" alt="Card image cap">
+        <div class="card-body">
+          <h3 class="card-title">Project Name</h3>
+          <p class="card-text">Project details will go here.</p>
+          <a href="#" class="btn btn-dark">See More</a>
         </div>
       </div>
     </div>
-  </section>
-<!-- certification tab/section -->
-  <section class="tab-pane fade" id="nav-certification" role="tabpanel" aria-labelledby="nav-certification-tab">
-<!-- Main Certifications -->
+  </article>
 
-<!-- Codecademy Certifications -->
-  </section>
 <!-- contact tab/section -->
   <section class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
     <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" data-url="https://calendly.com/d/yjz-d7q-6v5?hide_gdpr_banner=1"
-      style="min-width:320px;height:630px;">
+    <div class="calendly-inline-widget" data-url="https://calendly.com/d/yjz-d7q-6v5?hide_gdpr_banner=1">
     </div>
     <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
     <!-- Calendly inline widget end -->
   </section>
+</section>
 
-    
+  <footer>
+    <p>&copy; 2023 Mary Kohn's Portfolio Website. All rights reserved.</p>
+  </footer>
 <!-- Javascript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.3/umd/popper.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
 
 </body>
 </html>
