@@ -42,7 +42,6 @@ i.fa-shake {
   justify-content: space-evenly;
 }
 .card img {
-  background-color: var(--darkg);
 }
 .card-body h3 {
   color: var(--darkg); 
