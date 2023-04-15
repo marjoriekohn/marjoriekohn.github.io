@@ -6,6 +6,9 @@
     --border: #D96B62; /* burnt sienna - subheadings, borders */
     --label: #A65656; /* brick red - tags, labels, icons */
 }
+main {
+    height: 100vh;
+}
 .project-grid {
     display: flex;
     justify-content: center;
@@ -20,18 +23,22 @@
     justify-content: center;
 }
 article {
-    border: .1rem solid var(--border);
+    border: .25rem solid var(--border);
     border-radius: 25px;
-    margin: 1rem;
+    max-height: 400px; /* maximum height of the card */
+    /*margin: 1rem;*/
+}
+p {
+    padding: 0 1rem;
 }
 
 .label {
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem; /* creates a gap between rows */
-    padding: 2rem;
+    padding: 1rem 1rem;
+    justify-content: flex-start;
 }
-
 .label span {
     border-radius: 5rem;
     background-color: var(--label);
