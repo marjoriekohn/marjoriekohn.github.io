@@ -1,0 +1,42 @@
+:root {
+    --bg: #011140; /* oxford blue */
+    --text: #E0E0E0; /* gray - main text */
+    --main: #466C8C; /* steel blue - font headings, buttons, active */
+    --hover: #F2937E; /* salmon - contact, view project, hover */
+    --border: #D96B62; /* burnt sienna - subheadings, borders */
+    --label: #A65656; /* brick red - tags, labels, icons */
+}
+header {
+    margin: 2rem;
+    padding: 2rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 13rem;
+    height: 13rem;
+    border: 0.5rem solid var(--border);
+    border-radius: 50%;
+    overflow: hidden;
+}
+header img {
+    width: 200px;
+    height: auto;
+    transform: translate(-5px, 20px);
+}
+header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+}
+header li {
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+

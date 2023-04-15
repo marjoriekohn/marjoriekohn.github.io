@@ -3,9 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mary Kohn</title>
+    <title>Your Portfolio</title>
+<!--  google fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Rock+Salt&display=swap" rel="stylesheet">
+<!-- javascript -->
+    <script src="./src/main.js" defer></script>
+    <script src="https://kit.fontawesome.com/8d11417666.js" crossorigin="anonymous"></script>
+<!--  CSS  -->
+    <link rel="stylesheet" href="./resources/styles/reset.css">
+    <link rel="stylesheet" href="./resources/styles/main.css">
+    <link rel="stylesheet" href="./resources/styles/projects.css">
 </head>
-<body>
 
+<body>
+<!-- image and contact info -->
+<header>
+    <section id="image" class="image-container">
+        <img src="resources/img/imageportfolio.png" alt="picture of Mary Kohn">
+    </section>
+        <h1>Mary Kohn</h1>
+        <ul>
+            <li><a href="https://www.linkedin.com/in/marymkohn/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            <li><a href="https://github.com/marymkohn" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+            <li><a href="https://credly.com/marymkohn" target="_blank" rel="noopener noreferrer" aria-label="Certificates"><i class="fa-solid fa-award"></i></a></li>
+            <li><a href="mailto:marymkohn@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+</header>
+
+<!-- projects & skills -->
+<!--  IDEAS: filter by language, topic, date created, collaboration, contribution  -->
+<h2 id="projects-header">Projects</h2>
+<main class="project-grid">
+    <!-- Project  -->
+    <article role="article">
+        <a href="#"><img src="name-preview.jpg" alt="Project 1 description" /></a>
+        <section>
+            <h3>Project Name</h3>
+
+            <details><summary>README.md</summary>
+                summary goes here...
+                <a href="#">Link to README.md</a>
+            </details>
+            <div class="label">
+                <span class="languages label">HTML</span>
+                <span class="languages label">CSS</span>
+                <span class="languages label">Javascript</span>
+                <span class="languages label">Java</span>
+                <span class="frameworks label">Bootstrap</span>
+                <span class="databases label">SQL</span>
+                <span class="APIs label">Clipboard</span>
+                <span class="IDEs label">Webstorm</span>
+                <span class="version-control label">Git</span>
+            </div>
+        </section>
+    </article>
+    <article role="article">
+        <a href="#"><img src="name-preview.jpg" alt="Project 1 description" /></a>
+        <section>
+            <h3>Project Name</h3>
+            <details><summary>README.md</summary>
+                summary goes here...
+                <a href="#">Link to README.md</a>
+            </details>
+            <div class="label">
+                <span class="languages label">HTML</span>
+                <span class="languages label">CSS</span>
+                <span class="languages label">Javascript</span>
+                <span class="languages label">Java</span>
+                <span class="frameworks label">Bootstrap</span>
+                <span class="databases label">SQL</span>
+                <span class="APIs label">Clipboard</span>
+                <span class="IDEs label">Webstorm</span>
+                <span class="version-control label">Git</span>
+            </div>
+        </section>
+    </article>
+</main>
+<!--</main>-->
+
+</main>
 </body>
 </html>

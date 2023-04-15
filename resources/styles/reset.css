@@ -1,0 +1,50 @@
+:root {
+    --bg: #011140; /* oxford blue */
+    --text: #E0E0E0; /* gray - main text */
+    --main: #466C8C; /* steel blue - font headings, buttons, active */
+    --hover: #F2937E; /* salmon - contact, view project, hover */
+    --border: #D96B62; /* burnt sienna - subheadings, borders */
+    --label: #A65656; /* brick red - tags, labels, icons */
+}
+html {
+    font-size: 16px; /* default */
+    box-sizing: border-box;
+    scroll-behavior: smooth; /* a visually pleasing transition between elements or sections */
+}
+
+*, *::before, *::after {
+    box-sizing: inherit; /* ensure box-sizing behavior for all elements */
+}
+
+body {
+    background-color: var(--bg);
+    color: var(--text);
+    font-size: 18px;
+    line-height: 1.6;
+    font-family: 'Poppins', sans-serif;
+    margin: 0; /* reset to baseline - default browser margin/padding vary */
+    padding: 0;
+}
+h1 {
+    font-family: 'Rock Salt', 'Poppins', sans-serif;
+    font-size: 3rem;
+    font-weight: 700;
+}
+h2 {
+    font-family: 'Rock Salt', 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+h3, h4, h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+a {
+    text-decoration: none;
+    color: var(--main);
+}
+a:hover {
+    color: var(--hover);
+}
