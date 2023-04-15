@@ -40,4 +40,9 @@ header li {
     font-size: 2.5rem;
     padding: 1rem;
 }
+footer {
+    background-color: var(--main);
+    text-align: center;
+    height: 2rem;
 
+}
