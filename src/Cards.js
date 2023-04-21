@@ -18,7 +18,7 @@ export function generateCardContent () {
         'A website of simple javascript functions.',
         'https://marymkohn.github.io/javascript-functions/',
         'https://github.com/marymkohn/javascript-functions',
-        ['Javascript', 'HTML', 'CSS', 'Java', 'Bootstrap', 'Spring']
+        ['Javascript', 'HTML', 'CSS']
 );
     const projectCard2 = project2.createCardElement();
     document.querySelector('.grid-container').appendChild(projectCard2);
@@ -26,7 +26,7 @@ export function generateCardContent () {
     // project 3
     const project3 = new ProjectCard(
         'Byte Weather',
-        'A website that displays the current weather for a user’s location.',
+        'A website that displays the current weather in your area.',
         'https://byte-buddies.github.io/ByteWeather/',
         'https://github.com/Byte-Buddies/ByteWeather',
         ['Javascript', 'HTML', 'CSS']
