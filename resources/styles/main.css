@@ -1,66 +1,40 @@
-:root {
-    --headerfont: 'Rock Salt', Arial, sans-serif;
-    --bodyfont: 'Poppins', Arial, sans-serif;
-    --bg: #011140; /* oxford blue */
-    --text: #E0E0E0; /* gray - main text */
-    --main: #466C8C; /* steel blue - font headings, buttons, active */
-    --hover: #F2937E; /* salmon - contact, view project, hover */
-    --border: #D96B62; /* burnt sienna - subheadings, borders */
-    --label: #A65656; /* brick red - tags, labels, icons */
-}
-* {
-    margin: 0; /* reset margin and padding */
-    padding: 0;
-    box-sizing: border-box; /* ensures all elements are border-box */
-}
-html, body {
-    min-height: 100%;
-    font-family: var(--bodyfont);
-    font-size: 16px; /* rem used from now on, based off this 18px, 1rem = 18px */
-    background-color: var(--bg);
-    color: var(--text);
-}
 header {
-    height: 100vh;
-    text-align: center;
-    display: flex;
+    height: 100vh; /* landing page takes up screen */
+    display: flex; /* next four center the contents of the header*/
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
-.image-container {
+.image-container { /* checked and verified */
     display: flex;
     justify-content: center;
     align-items: center;
     width: 12.9rem;
     height: 13rem;
     margin: 1rem;
-    border: 0.5rem solid var(--border);
+    border: 0.5rem solid var(--heading);
     border-radius: 50%;
     overflow: hidden;
 }
-#image {
+#image { /* moves my img and adjusts for size */
     width: 200px;
     height: auto;
     transform: translate(-5px, 20px);
 }
-header ul {
+header ul { /* container for social icons */
     list-style: none;
     display: flex;
     justify-content: center;
     padding: 1rem;
 }
-header li {
+header li { /* adjusts the social icons */
     font-size: 2.5rem;
     padding: 1rem;
 }
-a i:hover {
+a i:hover { /* changes icon color on hover */
     color: var(--hover);
 }
 
 footer {
-    background-color: var(--main);
     text-align: center;
-    height: 2rem;
-
 }

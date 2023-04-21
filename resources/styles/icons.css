@@ -1,11 +1,4 @@
-:root {
-    --bg: #011140; /* oxford blue */
-    --text: #E0E0E0; /* gray - main text */
-    --main: #466C8C; /* steel blue - font headings, buttons, active */
-    --hover: #F2937E; /* salmon - contact, view project, hover */
-    --border: #D96B62; /* burnt sienna - subheadings, borders */
-    --label: #A65656; /* brick red - tags, labels, icons */
-}
+/* icons used in project cards */
 .project-icons {
     display: flex;
     justify-content: center;
@@ -13,13 +6,13 @@
     flex-wrap: wrap; /* wrap icons on smaller screens */
     padding: 1rem;
 }
+/* tooltips used for ALL icons */
 .tooltip {
     position: relative;
     cursor: pointer;
     display: inline-block;
     align-items: center;
 }
-
 .tooltip::after {
     content: attr(data-tooltip);
     font-size: .75rem;
@@ -29,7 +22,7 @@
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--label);
-    color: var(--text);
+    color: var(--mainText);
     padding: 5px 10px;
     border-radius: 5px;
     opacity: 0;
@@ -41,5 +34,5 @@
 }
 .tooltip i {
     padding: .5rem;
-    color: var(--main);
+    color: var(--button);
 }
