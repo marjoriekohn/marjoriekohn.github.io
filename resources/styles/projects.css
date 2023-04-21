@@ -1,3 +1,4 @@
+/* card container styles */
 main {
     height: 100vh; /* project section takes up screen */
     display: flex; /* next four center the contents */
@@ -5,6 +6,15 @@ main {
     justify-content: space-around;
     align-items: center;
 }
+
+h2 { /* project section title */
+    font-family: var(--headerfont);
+    font-size: 2rem;
+    font-weight: 700;
+    text-align: center;
+    letter-spacing: .25rem;
+}
+
 .project-grid {
     display: flex;
     justify-content: center;
@@ -18,14 +28,37 @@ main {
     width: 100%;
     justify-content: center;
 }
+
+/* card styles */
 article {
     border: .25rem solid var(--heading);
     border-radius: 25px;
     max-height: 400px; /* maximum height of the card */
     /*margin: 1rem;*/
 }
-p {
-    padding: 0 1rem;
+
+section {
+    /* empty */
+}
+
+h3 { /* project name */
+    font-family: var(--bodyfont);
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+p { /* project descriptions */
+    padding: .25rem;
+}
+
+a { /* project links */
+    text-decoration: none;
+    color: var(--button);
+}
+
+a:hover { /* project links - hover */
+    color: var(--hover);
 }
 
 .label {

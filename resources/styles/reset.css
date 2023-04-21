@@ -33,30 +33,5 @@ h1 { /* name */
     letter-spacing: .25rem;
 }
 
-h2 { /* project section title */
-    font-family: var(--headerfont);
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: .25rem;
-}
 
-h3 { /* project name */
-    font-family: var(--bodyfont);
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-}
 
-p { /* project descriptions */
-    padding: .25rem;
-}
-
-a { /* project links */
-    text-decoration: none;
-    color: var(--button);
-}
-
-a:hover { /* project links - hover */
-    color: var(--hover);
-}
