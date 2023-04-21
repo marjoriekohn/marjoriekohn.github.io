@@ -35,7 +35,3 @@ a i:hover { /* changes icon color on hover */
     color: var(--hover);
 }
 
-footer {
-    padding-top: 1.5rem;
-    text-align: center;
-}

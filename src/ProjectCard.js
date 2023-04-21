@@ -8,19 +8,34 @@ export class ProjectCard {
     }
 
     createCardElement() {
+        // empty container used for styling
         const article = document.createElement('article');
-        article.setAttribute('role', 'article');
 
-        const section = document.createElement('section');
+        // // empty container used for styling
+        // const section = document.createElement('section');
 
+        // project name
         const projectName = document.createElement('h3');
         projectName.textContent = this.name;
-        section.appendChild(projectName);
+        article.appendChild(projectName);
 
+        // project description
         const projectDescription = document.createElement('p');
         projectDescription.textContent = this.description;
-        section.appendChild(projectDescription);
+        article.appendChild(projectDescription);
 
+        // project labels
+        const labelsContainer = document.createElement('div');
+        labelsContainer.className = 'label';
+        this.labels.forEach(label => {
+            const labelElement = document.createElement('span');
+            labelElement.className = 'languages label';
+            labelElement.textContent = label;
+            labelsContainer.appendChild(labelElement);
+        });
+        article.appendChild(labelsContainer);
+
+        // project icons
         const projectIcons = document.createElement('div');
         projectIcons.className = 'project-icons';
 
@@ -30,22 +45,12 @@ export class ProjectCard {
         const pagesIcon = this.createIconElement('Project Website', this.pagesLink, 'fa-solid fa-globe fa-2xl');
         projectIcons.appendChild(pagesIcon);
 
-        section.appendChild(projectIcons);
+        article.appendChild(projectIcons);
 
-        const labelsContainer = document.createElement('div');
-        labelsContainer.className = 'label';
-        this.labels.forEach(label => {
-            const labelElement = document.createElement('span');
-            labelElement.className = 'languages label';
-            labelElement.textContent = label;
-            labelsContainer.appendChild(labelElement);
-        });
-        section.appendChild(labelsContainer);
-
-        article.appendChild(section);
+        // article.appendChild(article);
         return article;
     }
-
+    // project icons - hovering tooltips
     createIconElement(tooltipText, link, icons) {
         const tooltip = document.createElement('span');
         tooltip.className = 'tooltip';

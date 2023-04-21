@@ -18,7 +18,7 @@ export function generateCardContent () {
         'A website of simple javascript functions.',
         'https://marymkohn.github.io/javascript-functions/',
         'https://github.com/marymkohn/javascript-functions',
-        ['Javascript', 'HTML', 'CSS']
+        ['Javascript', 'HTML', 'CSS', 'Java', 'Bootstrap', 'Spring']
 );
     const projectCard2 = project2.createCardElement();
     document.querySelector('.grid-container').appendChild(projectCard2);

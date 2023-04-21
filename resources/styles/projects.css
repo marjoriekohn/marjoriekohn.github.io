@@ -1,64 +1,16 @@
-/* card container styles */
 main {
-    height: 100vh; /* project section takes up screen */
+    height: auto; /* project section takes up screen */
     display: flex; /* next four center the contents */
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
-
-h2 { /* project section title */
-    font-family: var(--headerfont);
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    letter-spacing: .25rem;
-}
-
-.project-grid {
-    display: flex;
-    justify-content: center;
-    width:100%;
-}
+/* card container styles */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 2.5rem 2.5rem;
-    max-width: 800px; /* maximum width of the grid */
-    width: 100%;
-    justify-content: center;
-}
-
-/* card styles */
-article {
-    border: .25rem solid var(--heading);
-    border-radius: 25px;
-    max-height: 400px; /* maximum height of the card */
-    /*margin: 1rem;*/
-}
-
-section {
-    /* empty */
-}
-
-h3 { /* project name */
-    font-family: var(--bodyfont);
-    font-size: 1.5rem;
-    font-weight: 600;
-    text-align: center;
-}
-
-p { /* project descriptions */
-    padding: .25rem;
-}
-
-a { /* project links */
-    text-decoration: none;
-    color: var(--button);
-}
-
-a:hover { /* project links - hover */
-    color: var(--hover);
+    max-width: 850px; /* maximum width of the grid */
 }
 
 .label {
@@ -71,20 +23,40 @@ a:hover { /* project links - hover */
 .label span {
     border-radius: 5rem;
     background-color: var(--label);
-    font-size: 1rem;
+    font-size: .75rem;
     height: 2rem;
     padding: 0.5rem;
-    min-width: 2rem;
+    min-width: auto;
     display: inline-block;
-    margin-right: 0.5rem;
+    margin-right: 0.25rem;
     margin-bottom: 0.5rem;
     line-height: 1rem; /* vertically center the text */
     text-align: center; /* horizontally center the text */
 }
 
 @media (max-width: 760px) {
+    main {
+        height: auto;
+    }
     .grid-container {
-        max-width: 400px; /* maximum width of the grid */
+        max-width: 500px; /* maximum width of the grid */
+        grid-gap: 1rem 1rem;
+    }
+    article { /* project card */
+        height: auto;; /* maximum height of the card */
+        width: 25rem; /* maximum height of the card */
+    }
 
+    h3 { /* project name */
+        font-size: 1rem;
+        font-weight: 600;
+        text-align: center;
+    }
+    p {
+        font-size: 1rem;
+    }
+    .label {
+        gap: 0.25rem; /* creates a gap between rows */
+        padding: .1rem .4rem;
     }
 }
