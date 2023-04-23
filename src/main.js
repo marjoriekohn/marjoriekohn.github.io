@@ -1,4 +1,3 @@
-import { generateCardContent} from "./Cards.js";
+import { generateCardContent } from "./Cards.js";
 
 generateCardContent();
-

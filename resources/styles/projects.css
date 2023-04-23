@@ -1,10 +1,11 @@
-main {
-    height: auto; /* project section takes up screen */
+main { /* main container - projects */
+    height: 100vh; /* project section takes up screen */
     display: flex; /* next four center the contents */
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
+
 /* card container styles */
 .grid-container {
     display: grid;
@@ -13,50 +14,44 @@ main {
     max-width: 850px; /* maximum width of the grid */
 }
 
-.label {
+article { /* project card */
+    background-color: var(--button);
+    border: dashed .2rem var(--heading);
+    border-radius: 2rem;
+    height: auto; /* maximum height of the card */
+    width: 20rem; /* maximum height of the card */
+    /*margin: 1rem;*/
+    display: flex;
+    flex-direction: column;
+    /*justify-content: space-between;*/
+}
+
+p { /* project descriptions */
+    padding: 0 1rem;
+}
+
+
+.label { /* project label container */
     display: flex;
     flex-wrap: wrap;
     gap: 0.5rem; /* creates a gap between rows */
-    padding: 1rem 1rem;
+    padding: .5rem .5rem;
     justify-content: flex-start;
 }
-.label span {
+
+.label span { /* project labels */
+    background-color: var(--background);
+    border: .1rem solid var(--heading);
     border-radius: 5rem;
-    background-color: var(--label);
     font-size: .75rem;
     height: 2rem;
     padding: 0.5rem;
     min-width: auto;
     display: inline-block;
     margin-right: 0.25rem;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
     line-height: 1rem; /* vertically center the text */
     text-align: center; /* horizontally center the text */
 }
 
-@media (max-width: 760px) {
-    main {
-        height: auto;
-    }
-    .grid-container {
-        max-width: 500px; /* maximum width of the grid */
-        grid-gap: 1rem 1rem;
-    }
-    article { /* project card */
-        height: auto;; /* maximum height of the card */
-        width: 25rem; /* maximum height of the card */
-    }
 
-    h3 { /* project name */
-        font-size: 1rem;
-        font-weight: 600;
-        text-align: center;
-    }
-    p {
-        font-size: 1rem;
-    }
-    .label {
-        gap: 0.25rem; /* creates a gap between rows */
-        padding: .1rem .4rem;
-    }
-}

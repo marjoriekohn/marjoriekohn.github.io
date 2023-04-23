@@ -2,10 +2,10 @@
     --headerfont: 'Rock Salt', Arial, sans-serif;
     --bodyfont: 'Poppins', Arial, sans-serif;
     --background: #011140; /* oxford blue */
-    --mainText: #E0E0E0; /* gray - main text */
-    --button: #466C8C; /* steel blue - font headings, buttons, active */
-    --hover: #F2937E; /* salmon - contact, view project, hover */
-    --heading: #D96B62; /* burnt sienna - subheadings, borders */
+    --mainText: #c6c6c6; /* gray - main text */
+    --button: #466C8C; /* steel blue - accent background, buttons, active */
+    --hover: #F2937E; /* salmon - contact, view project, hover, borders */
+    --heading: #D96B62; /* burnt sienna - headings */
     --label: #A65656; /* brick red - tags, labels, icons */
 }
 
@@ -17,7 +17,7 @@
 
 html body {
     min-height: 100%;
-    font-size: 18px;
+    font-size: 16px;
     scroll-behavior: smooth;
     background-color: var(--background);
     font-family: var(--bodyfont);
@@ -27,65 +27,32 @@ html body {
 
 h1 { /* name */
     font-family: var(--headerfont);
+    color: var(--heading);
     font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
     letter-spacing: .25rem;
+    padding: 1rem;
 }
+
 /* card styles */
 h2 { /* project section title */
-    font-family: var(--headerfont);
-    font-size: 2rem;
+    font-family: var(--bodyfont);
+    color: var(--heading);
+    font-size: 2.5rem;
     font-weight: 700;
     text-align: center;
-    padding: 2rem;
     letter-spacing: .25rem;
 }
 
 h3 { /* project name */
     font-family: var(--bodyfont);
     font-size: 1.5rem;
-    font-weight: 600;
     text-align: center;
-    padding: 1rem 0;
+    /*padding: .5rem 0;*/
 }
 
-form {
-    padding: 2rem;
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}
-
-input {
-    width: 100%;
-    height: 2rem;
-}
-
-article { /* project card */
-    border: .25rem solid var(--heading);
-    border-radius: 25px;
-    height: 20rem; /* maximum height of the card */
-    width: 20rem; /* maximum height of the card */
-    /*margin: 1rem;*/
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
-p { /* project descriptions */
-    padding: 0 1rem;
-}
-
-a { /* project links */
-    text-decoration: none;
-    color: var(--button);
-}
-
-a:hover { /* project links - hover */
-    color: var(--hover);
-}
 footer {
-    padding-top: 2rem;
+    /*padding-top: 2rem;*/
     text-align: center;
 }

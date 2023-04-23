@@ -1,11 +1,46 @@
-/* icons used in project cards */
-.project-icons {
+ul { /* container for social icons */
+    list-style: none;
+    display: flex;
+    align-items: center;
+    height: 4rem;
+}
+
+li { /* container for each of social icon */
+}
+
+.icon { /* social icons only */
+    color: var(--button);
+
+}
+
+.project-icons { /* container for project icons */
+    padding: 1rem;
     display: flex;
     justify-content: center;
-    align-items: center;
-    flex-wrap: wrap; /* wrap icons on smaller screens */
-    padding: 1rem;
 }
+
+i { /* project icons only */
+    color: var(--background);
+}
+
+a {
+    /*display: block;*/
+    /*text-align: center;*/
+    /*vertical-align: center;*/
+}
+
+a i { /* changes ALL icons */
+    font-size: 2rem;
+    border-radius: 2rem;
+}
+
+a i:hover { /* changes ALL icons color on hover */
+    color: var(--hover);
+    transition: font-size ease-in 200ms 2ms;
+    font-size: 3rem;
+}
+
+
 /* tooltips used for ALL icons */
 .tooltip {
     position: relative;
@@ -13,6 +48,7 @@
     display: inline-block;
     align-items: center;
 }
+
 .tooltip::after {
     content: attr(data-tooltip);
     font-size: .75rem;
@@ -29,10 +65,11 @@
     /*pointer-events: none;*/
     transition: opacity 0.3s;
 }
+
 .tooltip:hover::after {
     opacity: 1;
 }
+
 .tooltip i {
     padding: .5rem;
-    color: var(--button);
 }

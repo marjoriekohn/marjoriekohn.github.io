@@ -11,9 +11,6 @@ export class ProjectCard {
         // empty container used for styling
         const article = document.createElement('article');
 
-        // // empty container used for styling
-        // const section = document.createElement('section');
-
         // project name
         const projectName = document.createElement('h3');
         projectName.textContent = this.name;
@@ -47,7 +44,6 @@ export class ProjectCard {
 
         article.appendChild(projectIcons);
 
-        // article.appendChild(article);
         return article;
     }
     // project icons - hovering tooltips
