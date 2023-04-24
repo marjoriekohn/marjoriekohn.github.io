@@ -16,12 +16,17 @@ header { /* landing page */
     border: 0.5rem solid var(--heading);
     border-radius: 50%;
     overflow: hidden;
+    transition: box-shadow ease-in 200ms 2ms;
 }
 
 #image { /* moves my image and adjusts for size */
     width: 200px;
     height: auto;
     transform: translate(-5px, 20px);
+}
+
+.image-container:hover {
+    box-shadow: 0 0 5rem rgba(217, 107, 98, 1);
 }
 
 /*@media (max-width: 760px) {*/

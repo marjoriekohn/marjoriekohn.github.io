@@ -43,16 +43,18 @@ h2 { /* project section title */
     font-weight: 700;
     text-align: center;
     letter-spacing: .25rem;
+    padding: 2rem;
 }
 
 h3 { /* project name */
     font-family: var(--bodyfont);
     font-size: 1.5rem;
     text-align: center;
-    /*padding: .5rem 0;*/
+    padding: .5rem 0;
 }
 
 footer {
     /*padding-top: 2rem;*/
     text-align: center;
+    padding-top: 2rem;
 }
