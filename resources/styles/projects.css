@@ -4,7 +4,6 @@ main { /* main container - projects */
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    border: .1rem solid red;
 }
 
 /* card container styles */
@@ -15,7 +14,6 @@ main { /* main container - projects */
     max-width: 850px; /* maximum width of the grid */
     margin-left: auto;
     margin-right: auto;
-    border: .1rem solid red;
 
     /*display: grid;*/
     /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
