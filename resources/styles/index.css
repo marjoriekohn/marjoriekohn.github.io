@@ -24,35 +24,35 @@ header { /* landing page */
     transform: translate(-5px, 20px);
 }
 
-@media (max-width: 760px) {
-    main {
-        height: auto;
-    }
+/*@media (max-width: 760px) {*/
+/*    main {*/
+/*        height: auto;*/
+/*    }*/
 
-    .grid-container {
-        max-width: 500px; /* maximum width of the grid */
-        grid-gap: 1rem 1rem;
-    }
+/*    .grid-container {*/
+/*        max-width: 500px; !* maximum width of the grid *!*/
+/*        grid-gap: 1rem 1rem;*/
+/*    }*/
 
-    article { /* project card */
-        height: auto;; /* maximum height of the card */
-        width: 25rem; /* maximum height of the card */
-    }
+/*    article { !* project card *!*/
+/*        height: auto;; !* maximum height of the card *!*/
+/*        width: 25rem; !* maximum height of the card *!*/
+/*    }*/
 
-    h3 { /* project name */
-        font-size: 1rem;
-        font-weight: 600;
-        text-align: center;
-    }
+/*    h3 { !* project name *!*/
+/*        font-size: 1rem;*/
+/*        font-weight: 600;*/
+/*        text-align: center;*/
+/*    }*/
 
-    p {
-        font-size: 1rem;
-    }
+/*    p {*/
+/*        font-size: 1rem;*/
+/*    }*/
 
-    .label {
-        gap: 0.25rem; /* creates a gap between rows */
-        padding: .1rem .4rem;
-    }
-}
+/*    .label {*/
+/*        gap: 0.25rem; !* creates a gap between rows *!*/
+/*        padding: .1rem .4rem;*/
+/*    }*/
+/*}*/
 
 

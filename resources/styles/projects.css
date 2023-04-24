@@ -4,14 +4,23 @@ main { /* main container - projects */
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
+    border: .1rem solid red;
 }
 
 /* card container styles */
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    grid-gap: 2.5rem 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     max-width: 850px; /* maximum width of the grid */
+    margin-left: auto;
+    margin-right: auto;
+    border: .1rem solid red;
+
+    /*display: grid;*/
+    /*grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));*/
+    /*grid-gap: 2.5rem 2.5rem;*/
+    /*max-width: 850px; !* maximum width of the grid *!*/
 }
 
 article { /* project card */
@@ -20,10 +29,10 @@ article { /* project card */
     border-radius: 2rem;
     height: auto; /* maximum height of the card */
     width: 20rem; /* maximum height of the card */
-    /*margin: 1rem;*/
     display: flex;
     flex-direction: column;
-    /*justify-content: space-between;*/
+    margin: .25rem;
+
 }
 
 p { /* project descriptions */

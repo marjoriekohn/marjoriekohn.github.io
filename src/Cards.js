@@ -3,7 +3,7 @@ import { ProjectCard } from "./ProjectCard.js";
 export function generateCardContent() {
   // project 1
   const project1 = new ProjectCard(
-    "Quote Generator",
+    "Quote Me",
     "A dynamic quote generator that leverages API Ninjas Quotes API.",
     "https://marymkohn.github.io/quote-generator/",
     "https://github.com/marymkohn/quote-generator",
