@@ -1,12 +1,16 @@
 :root {
     --headerfont: 'Rock Salt', Arial, sans-serif;
     --bodyfont: 'Poppins', Arial, sans-serif;
-    --background: #011140; /* oxford blue */
-    --mainText: #c6c6c6; /* gray - main text */
-    --button: #466C8C; /* steel blue - accent background, buttons, active */
-    --hover: #F2937E; /* salmon - contact, view project, hover, borders */
-    --heading: #D96B62; /* burnt sienna - headings */
-    --label: #A65656; /* brick red - tags, labels, icons */
+    --paragraph: #121629;
+    --border: #121629;
+    --background: #232946;
+    --buttonText: #232946;
+    --button: #eebbc3;
+    --hover: #eebbc3;
+    --label: #eebbc3;
+    --icon: #eebbc3;
+    --heading: #fffffe;
+    --cardBackground: #b8c1ec;
 }
 
 * {
@@ -21,7 +25,7 @@ html body {
     scroll-behavior: smooth;
     background-color: var(--background);
     font-family: var(--bodyfont);
-    color: var(--mainText);
+    color: var(--paragraph);
     line-height: 1.6;
 }
 
@@ -51,6 +55,11 @@ h3 { /* project name */
     font-size: 1.5rem;
     text-align: center;
     padding: .5rem 0;
+}
+
+h4 {
+    color: var(--heading);
+    font-size: 1rem;
 }
 
 footer {

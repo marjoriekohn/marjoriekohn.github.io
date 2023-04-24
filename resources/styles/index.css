@@ -10,7 +10,7 @@ header { /* container for landing page */
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 12.9rem;
+    width: 13rem;
     height: 13rem;
     margin: 1rem;
     border: 0.5rem solid var(--heading);
@@ -54,6 +54,7 @@ header { /* container for landing page */
 .back {
     transform: rotateY(180deg);
     text-align: center;
+    background-color: var(--hover);
 }
 
 .image-container:hover .flip {
@@ -61,6 +62,6 @@ header { /* container for landing page */
 }
 
 .image-container:hover { /* animation - transition in .image-container */
-    box-shadow: 0 0 5rem rgba(217, 107, 98, 1);
+    box-shadow: 0 0 5rem rgba(238, 187, 195, 1);
 }
 
