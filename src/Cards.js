@@ -44,4 +44,26 @@ export function generateCardContent() {
   );
   const projectCard4 = project4.createCardElement();
   document.querySelector(".grid-container").appendChild(projectCard4);
+
+  // project 5
+  const project5 = new ProjectCard(
+    "Cheese Crave",
+    "A full-stack e-commerce website that utilizes a MySQL database.",
+    "https://cheese-crave.github.io/cheese-crave/",
+    "https://github.com/Cheese-Crave/cheese-crave",
+    ["Javascript", "Java", "Spring", "MySQL"]
+  );
+  const projectCard5 = project5.createCardElement();
+  document.querySelector(".grid-container").appendChild(projectCard5);
+
+  // project 6
+  const project6 = new ProjectCard(
+    "Cheese Crave",
+    "A full-stack e-commerce website that utilizes a MySQL database.",
+    "https://cheese-crave.github.io/cheese-crave/",
+    "https://github.com/Cheese-Crave/cheese-crave",
+    ["Javascript", "Java", "Spring", "MySQL"]
+  );
+  const projectCard6 = project6.createCardElement();
+  document.querySelector(".grid-container").appendChild(projectCard6);
 }
