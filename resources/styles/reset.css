@@ -5,12 +5,13 @@
     --border: #121629;
     --background: #232946;
     --buttonText: #232946;
-    --button: #eebbc3;
+    --label: #b8c1ec;
+    --mainBackground: #b8c1ec;
     --hover: #eebbc3;
-    --label: #eebbc3;
+    --cardBackground: #eebbc3;
+    --button: #eebbc3;
     --icon: #eebbc3;
     --heading: #fffffe;
-    --cardBackground: #b8c1ec;
 }
 
 * {
@@ -65,5 +66,5 @@ h4 {
 footer {
     /*padding-top: 2rem;*/
     text-align: center;
-    padding-top: 2rem;
+    padding-top: 1rem;
 }

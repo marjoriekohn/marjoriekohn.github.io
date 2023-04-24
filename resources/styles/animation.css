@@ -1,3 +1,4 @@
+/* the animation.css file contains animations - reference animation.js for javascript animations */
 .bounce {
     animation: bounce 2s ease 0s 1 normal forwards;
 }
@@ -45,3 +46,17 @@
         transform: translateY(0);
     }
 }
+
+.image-container:hover .flip {
+    transform: rotateY(180deg);
+}
+
+.image-container:hover { /* animation - transition in .image-container */
+    box-shadow: 0 0 5rem rgba(238, 187, 195, 1);
+}
+
+.flip-container:hover .flip {
+    transform: rotateY(180deg);
+}
+
+

@@ -1,4 +1,3 @@
-const flipContainer = document.querySelector(".flip-container");
 const backText = document.querySelector(".back-text");
 const socialIcons = document.querySelectorAll(".social-icons-wrapper .tooltip");
 const originalBackText = backText.innerText;

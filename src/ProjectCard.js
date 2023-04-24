@@ -1,67 +1,83 @@
 export class ProjectCard {
-    constructor(name, description, pagesLink, repoLink, labels) {
-        this.name = name;
-        this.description = description;
-        this.pagesLink = pagesLink;
-        this.repoLink = repoLink;
-        this.labels = labels;
-    }
+  constructor(name, description, labels, repoLink, pagesLink) {
+    this.name = name;
+    this.description = description;
+    this.labels = labels;
+    this.repoLink = repoLink;
+    this.pagesLink = pagesLink;
+  }
 
-    createCardElement() {
-        // empty container used for styling
-        const article = document.createElement('article');
+  createCardElement() {
+    // empty container used for styling
+    const article = document.createElement("article");
 
-        // project name
-        const projectName = document.createElement('h3');
-        projectName.textContent = this.name;
-        article.appendChild(projectName);
+    // project name
+    const projectName = document.createElement("h3");
+    projectName.textContent = this.name;
+    article.appendChild(projectName);
 
-        // project description
-        const projectDescription = document.createElement('p');
-        projectDescription.textContent = this.description;
-        article.appendChild(projectDescription);
+    // project description
+    const projectDescription = document.createElement("p");
+    projectDescription.textContent = this.description;
+    article.appendChild(projectDescription);
 
-        // project labels
-        const labelsContainer = document.createElement('div');
-        labelsContainer.className = 'label';
-        this.labels.forEach(label => {
-            const labelElement = document.createElement('span');
-            labelElement.className = 'languages label';
-            labelElement.textContent = label;
-            labelsContainer.appendChild(labelElement);
-        });
-        article.appendChild(labelsContainer);
+    // project labels -> change to language icons
+    const labelsContainer = document.createElement("section");
+    labelsContainer.className = "label";
+    this.labels.forEach((label) => {
+      const labelElement = document.createElement("i");
+      labelElement.className = "language";
+      switch (label.toLowerCase()) {
+        case "html":
+          labelElement.className = "fa-brands fa-html5";
+          labelElement.style.color = "#E34F26";
+          break;
+        case "css":
+          labelElement.className = "fa-brands fa-css3-alt";
+          labelElement.style.color = "#1572B6";
+          break;
+        case "bootstrap":
+          labelElement.className = "fa-brands fa-bootstrap";
+          labelElement.style.color = "#E34F26";
+          break;
+        case "javascript":
+          labelElement.className = "fa-brands fa-square-js";
+          labelElement.style.color = "#F7DF1E";
+          break;
+        case "nodejs":
+          labelElement.className = "fa-brands fa-node";
+          labelElement.style.color = "#43853D";
+          break;
+        case "java":
+          labelElement.className = "fa-brands fa-java";
+          labelElement.style.color = "#007396";
+          break;
+        case "mysql":
+          labelElement.className = "fa-solid fa-database";
+          labelElement.style.color = "#00758F";
+          break;
+      }
+      labelsContainer.appendChild(labelElement);
+    });
+    article.appendChild(labelsContainer);
 
-        // project icons
-        const projectIcons = document.createElement('div');
-        projectIcons.className = 'project-icons';
+    const projectLinks = document.createElement("section");
+    projectLinks.className = "project-links";
 
-        const repoIcon = this.createIconElement('GitHub Repository', this.repoLink, 'fa-brands fa-square-github fa-2xl');
-        projectIcons.appendChild(repoIcon);
+    const repoButton = document.createElement("button");
+    projectLinks.appendChild(repoButton);
+    repoButton.textContent = "Repository";
+    repoButton.onclick = () => window.open(this.repoLink, "_blank");
+    projectLinks.appendChild(repoButton);
 
-        const pagesIcon = this.createIconElement('Project Website', this.pagesLink, 'fa-solid fa-globe fa-2xl');
-        projectIcons.appendChild(pagesIcon);
+    const websiteButton = document.createElement("button");
+    projectLinks.appendChild(websiteButton);
+    websiteButton.textContent = "Live Demo";
+    websiteButton.onclick = () => window.open(this.pagesLink, "_blank");
+    projectLinks.appendChild(websiteButton);
 
-        article.appendChild(projectIcons);
+    article.appendChild(projectLinks);
 
-        return article;
-    }
-    // project icons - hovering tooltips
-    createIconElement(tooltipText, link, icons) {
-        const tooltip = document.createElement('span');
-        tooltip.className = 'tooltip';
-        tooltip.setAttribute('data-tooltip', tooltipText);
-
-        const anchor = document.createElement('a');
-        anchor.href = link;
-        anchor.target = '_blank';
-        anchor.setAttribute('aria-label', tooltipText);
-
-        const icon = document.createElement('i');
-        icon.className = icons;
-        anchor.appendChild(icon);
-
-        tooltip.appendChild(anchor);
-        return tooltip;
-    }
+    return article;
+  }
 }

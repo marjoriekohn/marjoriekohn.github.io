@@ -5,9 +5,9 @@ export function generateCardContent() {
   const project1 = new ProjectCard(
     "Quote Me",
     "A dynamic quote generator that leverages API Ninjas Quotes API.",
-    "https://marymkohn.github.io/quote-generator/",
+    ["HTML", "CSS", "Javascript", "NodeJS"],
     "https://github.com/marymkohn/quote-generator",
-    ["Javascript", "API Ninjas", "Quotes API"]
+    "https://marymkohn.github.io/quote-generator/"
   );
   const projectCard1 = project1.createCardElement();
   document.querySelector(".grid-container").appendChild(projectCard1);
@@ -16,9 +16,9 @@ export function generateCardContent() {
   const project2 = new ProjectCard(
     "What the Func!",
     "A repository of versatile JavaScript functions.",
-    "https://marymkohn.github.io/javascript-functions/",
+    ["HTML", "CSS", "Javascript", "Java", "MySQL"],
     "https://github.com/marymkohn/javascript-functions",
-    ["Javascript", "Java", "Spring", "MySQL"]
+    "https://marymkohn.github.io/javascript-functions/"
   );
   const projectCard2 = project2.createCardElement();
   document.querySelector(".grid-container").appendChild(projectCard2);
@@ -27,9 +27,9 @@ export function generateCardContent() {
   const project3 = new ProjectCard(
     "Byte Weather",
     "A real-time weather data platform that uses OpenWeather API.",
-    "https://byte-buddies.github.io/ByteWeather/",
+    ["HTML", "CSS", "Javascript", "NodeJS"],
     "https://github.com/Byte-Buddies/ByteWeather",
-    ["Javascript", "OpenWeather API"]
+    "https://byte-buddies.github.io/ByteWeather/"
   );
   const projectCard3 = project3.createCardElement();
   document.querySelector(".grid-container").appendChild(projectCard3);
@@ -38,9 +38,9 @@ export function generateCardContent() {
   const project4 = new ProjectCard(
     "Cheese Crave",
     "A full-stack e-commerce website that utilizes a MySQL database.",
-    "https://cheese-crave.github.io/cheese-crave/",
+    ["HTML", "CSS", "Javascript", "Java", "MySQL"],
     "https://github.com/Cheese-Crave/cheese-crave",
-    ["Javascript", "Java", "Spring", "MySQL"]
+    "https://cheese-crave.github.io/cheese-crave/"
   );
   const projectCard4 = project4.createCardElement();
   document.querySelector(".grid-container").appendChild(projectCard4);
@@ -49,9 +49,9 @@ export function generateCardContent() {
   const project5 = new ProjectCard(
     "Cheese Crave",
     "A full-stack e-commerce website that utilizes a MySQL database.",
-    "https://cheese-crave.github.io/cheese-crave/",
+    ["HTML", "CSS", "Javascript", "Java", "MySQL"],
     "https://github.com/Cheese-Crave/cheese-crave",
-    ["Javascript", "Java", "Spring", "MySQL"]
+    "https://cheese-crave.github.io/cheese-crave/"
   );
   const projectCard5 = project5.createCardElement();
   document.querySelector(".grid-container").appendChild(projectCard5);
@@ -60,9 +60,9 @@ export function generateCardContent() {
   const project6 = new ProjectCard(
     "Cheese Crave",
     "A full-stack e-commerce website that utilizes a MySQL database.",
-    "https://cheese-crave.github.io/cheese-crave/",
+    ["HTML", "CSS", "Javascript", "Java", "MySQL"],
     "https://github.com/Cheese-Crave/cheese-crave",
-    ["Javascript", "Java", "Spring", "MySQL"]
+    "https://cheese-crave.github.io/cheese-crave/"
   );
   const projectCard6 = project6.createCardElement();
   document.querySelector(".grid-container").appendChild(projectCard6);
