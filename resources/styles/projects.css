@@ -75,5 +75,4 @@ button:hover {
     color: var(--background);
     background-color: var(--button);
     border: .1rem dashed var(--background);
-
 }
