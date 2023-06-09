@@ -56,6 +56,10 @@ export class ProjectCard {
           labelElement.className = "fa-solid fa-database";
           labelElement.style.color = "#00758F";
           break;
+        case "postgresql":
+          labelElement.className = "fa-solid fa-database";
+          labelElement.style.color = "#00758F";
+          break;
       }
       labelsContainer.appendChild(labelElement);
     });
