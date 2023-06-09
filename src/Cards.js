@@ -6,8 +6,8 @@ export function generateCardContent() {
         "Quote Me",
         "A dynamic quote generator that leverages API Ninjas Quotes API.",
         ["HTML", "CSS", "Javascript", "NodeJS"],
-        "https://github.com/marymkohn/quote-generator",
-        "https://marymkohn.github.io/quote-generator/"
+        "https://github.com/marymkohn/Quote-Me",
+        "https://marymkohn.github.io/Quote-Me/"
     );
     const projectCard1 = project1.createCardElement();
     document.querySelector(".grid-container").appendChild(projectCard1);
