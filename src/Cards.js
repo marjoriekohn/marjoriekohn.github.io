@@ -22,9 +22,10 @@ export function generateCardContent() {
 		document.querySelector(".grid-container").appendChild(projectCardCheeseScraper);
 
 		// project Cheese API
-		const projectCheeseAPI = new ProjectCard("Cheese API", "A service that retrieves cheese data from a PostgreSQL database.", ["Java", "Spring", "PostgreSQL"], "https://github.com/Cheese-Crave/cheese-crave", "https://cheese-crave.github.io/cheese-crave/");
-		const projectCardCheeseAPI = projectCheeseAPI.createCardElement();
-		document.querySelector(".grid-container").appendChild(projectCardCheeseAPI);
+		// const projectCheeseAPI = new ProjectCard("Cheese API", "A service that retrieves cheese data from a PostgreSQL
+		// database.", ["Java", "Spring", "PostgreSQL"], "https://github.com/Cheese-Crave/cheese-crave",
+		// "https://cheese-crave.github.io/cheese-crave/"); const projectCardCheeseAPI =
+		// projectCheeseAPI.createCardElement(); document.querySelector(".grid-container").appendChild(projectCardCheeseAPI);
 
 		// project jQulator
 		const projectjQulator = new ProjectCard("jQulator", "A simple calculator built using jQuery.", ["HTML", "CSS", "Bootstrap", "Javascript"], "https://github.com/marymkohn/jQuery-calculator", "https://marymkohn.github.io/jQuery-calculator/");
