@@ -7,7 +7,7 @@ export function generateCardContent() {
 		document.querySelector(".grid-container").appendChild(projectCardQuoteMe);
 
 		// project What the Func!
-		const projectWhatTheFunc = new ProjectCard("What the Func!", "A repository of versatile JavaScript functions.", ["HTML", "CSS", "Javascript", "Java", "MySQL"], "https://github.com/marymkohn/javascript-functions", "https://marymkohn.github.io/javascript-functions/");
+		const projectWhatTheFunc = new ProjectCard("What the Func!", "A repository of versatile JavaScript functions.", ["HTML", "CSS", "Javascript"], "https://github.com/marymkohn/javascript-functions", "https://marymkohn.github.io/javascript-functions/");
 		const projectCardWhatTheFunc = projectWhatTheFunc.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardWhatTheFunc);
 
@@ -17,7 +17,7 @@ export function generateCardContent() {
 		document.querySelector(".grid-container").appendChild(projectCardByteWeather);
 
 		// project Cheese Scraper
-		const projectCheeseScraper = new ProjectCard("Cheese Scraper", "A tool that harvests cheese data, forming a PostgreSQL database.", ["Java", "Spring", "PostgreSQL"], "https://github.com/Cheese-Crave/cheese-crave", "https://cheese-crave.github.io/cheese-crave/");
+		const projectCheeseScraper = new ProjectCard("Cheese Scraper", "A tool that harvests cheese data, forming a Postgres database.", ["Java", "PostgreSQL"], "https://github.com/marymkohn/webScraper-cheese.com", "https://cheese-crave.github.io/cheese-crave/");
 		const projectCardCheeseScraper = projectCheeseScraper.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardCheeseScraper);
 
