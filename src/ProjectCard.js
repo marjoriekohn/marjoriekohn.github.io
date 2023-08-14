@@ -38,11 +38,19 @@ export class ProjectCard {
           break;
         case "bootstrap":
           labelElement.className = "fa-brands fa-bootstrap";
-          labelElement.style.color = "#E34F26";
+          labelElement.style.color = "#7952B3";
           break;
         case "javascript":
-          labelElement.className = "fa-brands fa-square-js";
+          labelElement.className = "fa-brands fa-js-square";
           labelElement.style.color = "#F7DF1E";
+          break;
+        case "react":
+          labelElement.className = "fa-brands fa-react";
+          labelElement.style.color = "#61DAFB";
+          break;
+        case "angular":
+          labelElement.className = "fa-brands fa-angular";
+          labelElement.style.color = "#DD0031";
           break;
         case "nodejs":
           labelElement.className = "fa-brands fa-node";
@@ -52,15 +60,31 @@ export class ProjectCard {
           labelElement.className = "fa-brands fa-java";
           labelElement.style.color = "#007396";
           break;
+        case "python":
+          labelElement.className = "fa-brands fa-python";
+          labelElement.style.color = "#3776AB";
+          break;
         case "mysql":
           labelElement.className = "fa-solid fa-database";
-          labelElement.style.color = "#00758F";
+          labelElement.style.color = "#4479A1";
           break;
         case "postgresql":
           labelElement.className = "fa-solid fa-database";
-          labelElement.style.color = "#00758F";
+          labelElement.style.color = "#336791";
           break;
-      }
+        case "docker":
+          labelElement.className = "fa-brands fa-docker";
+          labelElement.style.color = "#2496ED";
+          break;
+        case "aws":
+          labelElement.className = "fa-brands fa-aws";
+          labelElement.style.color = "#232F3E";
+          break;
+        case "jenkins":
+          labelElement.className = "fa-brands fa-jenkins";
+          labelElement.style.color = "#D24939";
+          break;
+        }
       labelsContainer.appendChild(labelElement);
     });
     article.appendChild(labelsContainer);
