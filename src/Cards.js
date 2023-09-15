@@ -2,12 +2,12 @@ import {ProjectCard} from "./ProjectCard.js";
 
 export function generateCardContent() {
 		// project Quote Me
-		const projectQuoteGenerator = new ProjectCard("Quote Generator", "A dynamic quote generator that leverages API" +	" Ninjas Quotes API.", ["HTML", "CSS", "Javascript", "NodeJS"], "https://github.com/marymkohn/quote-generator", "https://marymkohn.github.io/quote-generator/");
+		const projectQuoteGenerator = new ProjectCard("Quote Generator", "A dynamic quote generator that leverages API" +	" Ninjas Quotes API.", ["HTML", "CSS", "Javascript", "NodeJS"], "https://github.com/marjoriekohn/quote-generator", "https://marjoriekohn.github.io/quote-generator/");
 		const projectCardQuoteGenerator = projectQuoteGenerator.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardQuoteGenerator);
 
 		// project What the Func!
-		const projectJSFunctions = new ProjectCard("JavaScript Functions", "A repository of versatile JavaScript" +	" functions.", ["HTML", "CSS", "Javascript"], "https://github.com/marymkohn/javascript-functions", "https://marymkohn.github.io/javascript-functions/");
+		const projectJSFunctions = new ProjectCard("JavaScript Functions", "A repository of versatile JavaScript" +	" functions.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/javascript-functions", "https://marjoriekohn.github.io/javascript-functions/");
 		const projectCardJSFunctions = projectJSFunctions.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardJSFunctions);
 
@@ -17,7 +17,7 @@ export function generateCardContent() {
 		document.querySelector(".grid-container").appendChild(projectCardByteWeather);
 
 		// project jQulator
-		const projectCalculator = new ProjectCard("Calculator", "A simple calculator built using jQuery.", ["HTML", "CSS", "Javascript"], "https://github.com/marymkohn/calculator", "https://marymkohn.github.io/calculator/");
+		const projectCalculator = new ProjectCard("Calculator", "A simple calculator built using jQuery.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/calculator", "https://marjoriekohn.github.io/calculator/");
 		const projectCardCalculator = projectCalculator.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardCalculator);
 
