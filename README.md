@@ -1,4 +1,4 @@
-# Mary Kohn's Portfolio Website
+# Marjorie Kohn's Portfolio Website
 
 Welcome to the GitHub repository for my personal portfolio website. This website showcases my professional experience, technical skills, and projects that I've worked on. The website is designed to provide a comprehensive and visually engaging overview of my work as a software developer and to serve as a platform for potential employers and collaborators to get to know me better.
 
@@ -10,7 +10,7 @@ Welcome to the GitHub repository for my personal portfolio website. This website
 5. [Contact](#contact)
 
 ## Live Demo
-Visit my portfolio website live at [https://marymkohn.github.io](https://marymkohn.github.io).
+Visit my portfolio website live at [https://marjoriekohn.github.io](https://marjoriekohn.github.io).
 
 ## Features
 * **Professional Experience**: Showcases my professional journey, highlighting my work experience, roles, and responsibilities.
@@ -28,6 +28,6 @@ This portfolio website is built using the following technologies:
 ## Contact
 
 If you have any questions or would like to discuss potential opportunities, please feel free to reach out to me via:
-* Email: [marymkohn@gmail.com](mailto:marymkohn@gmail.com)
-* LinkedIn: [linkedin.com/in/marymkohn](https://www.linkedin.com/in/marymkohn/)
+* Email: [marjoriekohn@gmail.com](mailto:marjoriekohn01@gmail.com)
+* LinkedIn: [linkedin.com/in/marjoriekohn](https://www.linkedin.com/in/marjoriekohn/)
 * GitHub: [github.com/marjoriekohn](https://github.com/marjoriekohn)
