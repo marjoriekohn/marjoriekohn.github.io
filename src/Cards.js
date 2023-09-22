@@ -2,22 +2,22 @@ import {ProjectCard} from "./ProjectCard.js";
 
 export function generateCardContent() {
 		// project Quote Generator
-		const projectQuoteGenerator = new ProjectCard("Quote Generator", "A dynamic quote generator that leverages API" +	" Ninjas Quotes API.", ["HTML", "CSS", "Javascript", "NodeJS"], "https://github.com/marjoriekohn/quote-generator", "https://main--marjorie-kohn-quote-generator.netlify.app");
+		const projectQuoteGenerator = new ProjectCard("Quote Generator", "A dynamic quote generator that leverages API" +	" Ninjas Quotes API.", ["HTML", "CSS", "JavaScript", "NodeJS"], "https://github.com/marjoriekohn/quote-generator", "https://quotes.marjoriekohn.org");
 		const projectCardQuoteGenerator = projectQuoteGenerator.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardQuoteGenerator);
 
 		// project Javascript Functions
-		const projectJSFunctions = new ProjectCard("JavaScript Functions", "A repository of versatile JavaScript" +	" functions.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/javascript-functions", "https://marjoriekohn.github.io/javascript-functions/");
+		const projectJSFunctions = new ProjectCard("JavaScript Functions", "A repository of versatile JavaScript" +	" functions.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/javascript-functions", "https://algorithms.marjoriekohn.org");
 		const projectCardJSFunctions = projectJSFunctions.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardJSFunctions);
 
 		// project Byte Weather
-		const projectByteWeather = new ProjectCard("Byte Weather", "A real-time weather data platform that uses OpenWeather API.", ["HTML", "CSS", "Javascript", "NodeJS"], "https://github.com/Byte-Buddies/ByteWeather", "https://byte-buddies.github.io/ByteWeather/");
+		const projectByteWeather = new ProjectCard("Byte Weather", "A real-time weather data platform that uses OpenWeather API.", ["HTML", "CSS", "Javascript", "NodeJS"], "https://github.com/Byte-Buddies/ByteWeather", "https://weather.marjoriekohn.org");
 		const projectCardByteWeather = projectByteWeather.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardByteWeather);
 
 		// project Calculator
-		const projectCalculator = new ProjectCard("Calculator", "A simple calculator built using jQuery.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/calculator", "https://marjoriekohn.github.io/calculator/");
+		const projectCalculator = new ProjectCard("Calculator", "A simple calculator built using jQuery.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/calculator", "https://calculator.marjoriekohn.org");
 		const projectCardCalculator = projectCalculator.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardCalculator);
 
