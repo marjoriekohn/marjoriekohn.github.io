@@ -1,18 +1,18 @@
 import {ProjectCard} from "./ProjectCard.js";
 
 export function generateCardContent() {
-		// project Quote Generator
-		const projectQuoteGenerator = new ProjectCard("Quote Generator", "A dynamic quote generator that leverages API" +	" Ninjas Quotes API.", ["HTML", "CSS", "JavaScript", "NodeJS"], "https://github.com/marjoriekohn/quote-generator", "https://quotes.marjoriekohn.com");
+		// project Quotes
+		const projectQuoteGenerator = new ProjectCard("Quotes", "Fetches random quotes from an external API.", ["HTML", "CSS", "JavaScript", "NodeJS"], "https://github.com/marjoriekohn/quote-generator", "https://quotes.marjoriekohn.com");
 		const projectCardQuoteGenerator = projectQuoteGenerator.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardQuoteGenerator);
 
-		// project Javascript Functions
-		const projectJSFunctions = new ProjectCard("JavaScript Functions", "A repository of versatile JavaScript" +	" functions.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/code-solutions", "https://codesolutions.marjoriekohn.com");
+		// project Code Solutions
+		const projectJSFunctions = new ProjectCard("Code Solutions", "A repository of solutions to coding challenges.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/code-solutions", "https://codesolutions.marjoriekohn.com");
 		const projectCardJSFunctions = projectJSFunctions.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardJSFunctions);
 
-		// project Byte Weather
-		const projectByteWeather = new ProjectCard("Byte Weather", "A real-time weather data platform that uses OpenWeather API.", ["HTML", "CSS", "Javascript", "NodeJS"], "https://github.com/marjoriekohn/weather", "https://weather.marjoriekohn.com");
+		// project Weather
+		const projectByteWeather = new ProjectCard("Weather", "A real-time weather data platform that uses OpenWeather API.", ["HTML", "CSS", "Javascript", "NodeJS"], "https://github.com/marjoriekohn/weather", "https://weather.marjoriekohn.com");
 		const projectCardByteWeather = projectByteWeather.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardByteWeather);
 
