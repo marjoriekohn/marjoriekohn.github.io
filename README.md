@@ -11,7 +11,7 @@ Welcome to the GitHub repository for my personal portfolio website. This website
 ## Live Demo
 [![Netlify Status](https://api.netlify.com/api/v1/badges/072ef16b-833e-45ad-b193-8322aeea41ce/deploy-status)](https://app.netlify.com/sites/marjoriekohn-portfolio/deploys)
 
-Visit my live portfolio website at [https://marjoriekohn.org](https://marjoriekohn.org).
+Visit my live portfolio website at [https://marjoriekohn.com](https://marjoriekohn.com).
 
 ## Features
 * **Professional Experience**: Showcases my professional journey, highlighting my work experience, roles, and responsibilities.
