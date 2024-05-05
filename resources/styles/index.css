@@ -23,10 +23,9 @@ header { /* container for landing page */
     position: relative;
 }
 
-#image { /* moves image and adjusts for size */
+#image {
     width: 200px;
     height: auto;
-    transform: translate(-5px, 20px);
 }
 
 .flip {
