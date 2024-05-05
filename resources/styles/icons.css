@@ -11,3 +11,9 @@ a i:hover { /* changes ALL icons color on hover */
     margin: .25rem;
 }
 
+.fa-circle-arrow-down {
+    color: var(--heading);
+    padding-top: 10rem;
+    animation: heartbeat 1.5s linear infinite
+}
+
