@@ -6,6 +6,11 @@ export function generateCardContent() {
 		const projectCardQuoteGenerator = projectQuoteGenerator.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardQuoteGenerator);
 
+		// project Rosalind
+		const projectRosalind = new ProjectCard("Rosalind", "A repository of solutions to bioinformatics coding challenges.", ["Python"], "https://github.com/marjoriekohn/rosalind", "https://rosalind.marjoriekohn.com");
+		const projectCardRosalind = projectRosalind.createCardElement();
+		document.querySelector(".grid-container").appendChild(projectCardRosalind);
+
 		// project Code Solutions
 		const projectJSFunctions = new ProjectCard("Code Solutions", "A repository of solutions to coding challenges.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/code-solutions", "https://codesolutions.marjoriekohn.com");
 		const projectCardJSFunctions = projectJSFunctions.createCardElement();
