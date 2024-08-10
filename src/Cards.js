@@ -7,7 +7,7 @@ export function generateCardContent() {
 		document.querySelector(".grid-container").appendChild(projectCardQuoteGenerator);
 
 		// project Rosalind
-		const projectRosalind = new ProjectCard("Rosalind", "A repository of solutions to bioinformatics coding challenges.", ["Python"], "https://github.com/marjoriekohn/rosalind", "https://rosalind.marjoriekohn.com");
+		const projectRosalind = new ProjectCard("Rosalind", "A repository of solutions to bioinformatics coding challenges.", ["Python"], "https://github.com/marjoriekohn/rosalind", "https://marjoriekohn-rosalind.streamlit.app/");
 		const projectCardRosalind = projectRosalind.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardRosalind);
 
