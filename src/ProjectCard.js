@@ -84,6 +84,9 @@ export class ProjectCard {
           labelElement.className = "fa-brands fa-jenkins";
           labelElement.style.color = "#D24939";
           break;
+        case "r":
+          labelElement.className = "fa-brands fa-r-project";
+          labelElement.style.color = "#4479A1";
         }
       labelsContainer.appendChild(labelElement);
     });
