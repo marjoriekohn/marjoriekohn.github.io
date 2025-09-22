@@ -26,8 +26,8 @@ export function generateCardContent() {
 		const projectCardCalculator = projectCalculator.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardCalculator);
 
-		// project Cheese Crave
-		const projectCheeseCrave = new ProjectCard("Cheese Crave", "A full-stack e-commerce website that utilizes a MySQL database.", ["HTML", "CSS", "Javascript", "Java", "MySQL"], "https://github.com/Cheese-Crave/cheese-crave", "https://cheese-crave.github.io/cheese-crave/");
-		const projectCardCheeseCrave = projectCheeseCrave.createCardElement();
-		document.querySelector(".grid-container").appendChild(projectCardCheeseCrave);
+		// project Ask AI
+		const projectBNFO620 = new ProjectCard("Ask AI", "An asynchronous python program to query AI models", ["Python", "R"], "https://github.com/marjoriekohn/bnfo620_ai_caller", "https://github.com/marjoriekohn/bnfo620_ai_caller");
+		const projectCardBNFO620 = projectBNFO620.createCardElement();
+		document.querySelector(".grid-container").appendChild(projectCardBNFO620);
 }
