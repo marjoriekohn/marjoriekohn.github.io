@@ -22,7 +22,7 @@ main { /* main container - projects */
 
 article { /* project card */
     background-color: var(--mainBackground);
-    border: dashed .2rem var(--border);
+    border: solid .2rem var(--border);
     border-radius: 2rem;
     height: auto; /* maximum height of the card */
     width: 20rem; /* maximum height of the card */
@@ -64,7 +64,7 @@ button {
     font-size: 1rem;
     color: var(--button);
     background-color: var(--background);
-    border: .1rem dashed var(--label);
+    border: .1rem solid var(--label);
     border-radius: 4rem;
     margin: 1rem;
     padding: .5rem;
