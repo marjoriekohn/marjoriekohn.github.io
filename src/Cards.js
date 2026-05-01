@@ -18,7 +18,7 @@ export function generateCardContent() {
 		document.querySelector(".grid-container").appendChild(projectCardBNFO620);
 
 		// project Public Dataset Analysis
-		const projectDatasetAnalysis = new ProjectCard("Public Dataset Analysis", "An analysis of the CDCs Chronic Disease Indicators dataset.", ["R"], "https://github.com/marjoriekohn/Chronic-Disease-Indicators---Analysis", "https://github.com/marjoriekohn/Chronic-Disease-Indicators---Analysis");
+		const projectDatasetAnalysis = new ProjectCard("Public Dataset Analysis", "An analysis of the CDCs Chronic Disease Indicators dataset.", ["R"], "https://github.com/marjoriekohn/Chronic-Disease-Indicators---Analysis", "https://marjoriekohn-cdi-analysis.share.connect.posit.cloud/");
 		const projectCardDatasetAnalysis = projectDatasetAnalysis.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardDatasetAnalysis);
 
