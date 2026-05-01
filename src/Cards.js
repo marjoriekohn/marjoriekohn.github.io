@@ -2,6 +2,21 @@ import {ProjectCard} from "./ProjectCard.js";
 
 export function generateCardContent() {
 
+		// project Glioma Predictor
+		const projectGlioma = new ProjectCard("Glioma Grade Predictor", "Classifies glioma grade from clinical and molecular data.", ["R"], "https://github.com/marjoriekohn/hgen-612-project3", "https://marjoriekohn-ggp.share.connect.posit.cloud/");
+		const projectCardGlioma = projectGlioma.createCardElement();
+		document.querySelector(".grid-container").appendChild(projectCardGlioma);	
+	
+		// project Pine Beetle Dashboard
+		const projectPineBeetle = new ProjectCard("Pine Beetle Dashboard", "Predicting brood tree proximity from pine beetle outbreak data.", ["R"], "https://github.com/marjoriekohn/hgen-612-project2", "https://marjoriekohn-outbreak-predictor.share.connect.posit.cloud");
+		const projectCardPineBeetle = projectPineBeetle.createCardElement();
+		document.querySelector(".grid-container").appendChild(projectCardPineBeetle);
+
+		// project Public Dataset Analysis
+		const projectDatasetAnalysis = new ProjectCard("Public Dataset Analysis", "An analysis of the CDCs Chronic Disease Indicators dataset.", ["R"], "https://github.com/marjoriekohn/Chronic-Disease-Indicators---Analysis", "https://marjoriekohn-cdi-analysis.share.connect.posit.cloud/");
+		const projectCardDatasetAnalysis = projectDatasetAnalysis.createCardElement();
+		document.querySelector(".grid-container").appendChild(projectCardDatasetAnalysis);	
+		
 		// project Rosalind
 		const projectRosalind = new ProjectCard("Rosalind", "A repository of solutions to bioinformatics coding challenges.", ["Python"], "https://github.com/marjoriekohn/rosalind", "https://marjoriekohn-rosalind.streamlit.app/");
 		const projectCardRosalind = projectRosalind.createCardElement();
@@ -12,16 +27,6 @@ export function generateCardContent() {
 		const projectCardJSFunctions = projectJSFunctions.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardJSFunctions);
 
-		// project Ask AI
-		const projectBNFO620 = new ProjectCard("Ask AI", "An asynchronous python program to query AI models.", ["Python"], "https://github.com/marjoriekohn/bnfo620_ai_caller", "https://github.com/marjoriekohn/bnfo620_ai_caller");
-		const projectCardBNFO620 = projectBNFO620.createCardElement();
-		document.querySelector(".grid-container").appendChild(projectCardBNFO620);
-
-		// project Public Dataset Analysis
-		const projectDatasetAnalysis = new ProjectCard("Public Dataset Analysis", "An analysis of the CDCs Chronic Disease Indicators dataset.", ["R"], "https://github.com/marjoriekohn/Chronic-Disease-Indicators---Analysis", "https://marjoriekohn-cdi-analysis.share.connect.posit.cloud/");
-		const projectCardDatasetAnalysis = projectDatasetAnalysis.createCardElement();
-		document.querySelector(".grid-container").appendChild(projectCardDatasetAnalysis);
-
 		// project Quote Generator
 		const projectQuoteGenerator = new ProjectCard("Quotes", "Fetches random quotes from an external API.", ["HTML", "CSS", "JavaScript", "NodeJS"], "https://github.com/marjoriekohn/quote-generator", "https://quotes.marjoriekohn.com");
 		const projectCardQuoteGenerator = projectQuoteGenerator.createCardElement();
@@ -31,6 +36,11 @@ export function generateCardContent() {
 		const projectCalculator = new ProjectCard("Calculator", "A simple calculator built using jQuery.", ["HTML", "CSS", "Javascript"], "https://github.com/marjoriekohn/calculator", "https://calculator.marjoriekohn.com");
 		const projectCardCalculator = projectCalculator.createCardElement();
 		document.querySelector(".grid-container").appendChild(projectCardCalculator);
+
+		// project Ask AI
+		// const projectBNFO620 = new ProjectCard("Ask AI", "An asynchronous python program to query AI models.", ["Python"], "https://github.com/marjoriekohn/bnfo620_ai_caller", "https://github.com/marjoriekohn/bnfo620_ai_caller");
+		// const projectCardBNFO620 = projectBNFO620.createCardElement();
+		// document.querySelector(".grid-container").appendChild(projectCardBNFO620);
 	
 		// project Weather
 		// const projectByteWeather = new ProjectCard("Weather", "A real-time weather data platform that uses OpenWeather API.", ["HTML", "CSS", "Javascript", "NodeJS"], "https://github.com/marjoriekohn/weather", "https://weather.marjoriekohn.com");
